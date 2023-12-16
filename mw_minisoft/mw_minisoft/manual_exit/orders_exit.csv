@@ -1,0 +1,3 @@
+inst_date,inst_name,inst_strategy,inst_price,inst_option_name,inst_option_type,inst_qty,inst_direction,inst_exchange,inst_expiry_date
+2023-04-26 11:50:00+05:30,NSE:NIFTYBANK-INDEX,day_open_strategy,42666.1,NSE:BANKNIFTY23APR42600CE,CE,50,up_exit,NSE,19-04-2023
+

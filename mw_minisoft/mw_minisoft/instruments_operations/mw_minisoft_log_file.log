@@ -1,0 +1,22 @@
+2022-12-30 18:54:49,589 - INFO - instrument_read_write_operations.py - download_write_instrument_tokens:59 - Downloading instrument tokens Started
+2022-12-30 18:55:44,823 - INFO - instrument_read_write_operations.py - download_write_instrument_tokens:59 - Downloading instrument tokens Started
+2022-12-30 19:05:30,797 - INFO - instrument_read_write_operations.py - download_write_instrument_tokens:58 - Downloading instrument tokens Started
+2022-12-30 19:05:54,985 - INFO - instrument_read_write_operations.py - download_write_instrument_tokens:58 - Downloading instrument tokens Started
+2022-12-30 19:06:50,927 - INFO - instrument_read_write_operations.py - download_write_instrument_tokens:58 - Downloading instrument tokens Started
+2022-12-30 19:06:53,454 - ERROR - instrument_read_write_operations.py - download_write_instrument_tokens:79 - Cannot save file into a non-existent directory: 'resources\instruments'
+Traceback (most recent call last):
+  File "C:\mw_market_watch\mw_minisoft_stg_01\mw_minisoft_fyers\mw_minisoft\mw_minisoft\instruments_operations\instrument_read_write_operations.py", line 77, in download_write_instrument_tokens
+    df_fyers_instruments.to_csv(INSTRUMENTS_DATA_FILE, index=False)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 3563, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\formats\format.py", line 1180, in to_csv
+    csv_formatter.save()
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\formats\csvs.py", line 241, in save
+    with get_handle(
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\common.py", line 697, in get_handle
+    check_parent_directory(str(handle))
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\common.py", line 571, in check_parent_directory
+    raise OSError(fr"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'resources\instruments'
+2022-12-30 19:06:53,457 - ERROR - instrument_read_write_operations.py - download_write_instrument_tokens:80 - Cannot save file into a non-existent directory: 'resources\instruments'
+2022-12-30 19:06:53,457 - INFO - instrument_read_write_operations.py - download_write_instrument_tokens:81 - Downloading instrument token had completed

@@ -1,0 +1,3 @@
+inst_date,inst_name,inst_strategy,inst_price,inst_option_name,inst_option_type,inst_qty,inst_direction,inst_exchange,inst_expiry_date
+2023-03-31 19:26:00+05:30,MCX:CRUDEOIL23APRFUT,day_open_strategy,6181.0,MCX:CRUDEOIL23APR6200CE,CE,1,up_entry,MCX,19-04-2023
+

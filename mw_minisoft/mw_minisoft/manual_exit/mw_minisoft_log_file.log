@@ -1,0 +1,341 @@
+2023-03-31 20:26:58,875 - INFO - account_management.py -       read_user_info:15 - stated read user info data from user_info file
+2023-03-31 20:26:58,877 - ERROR - main_program_manual_exit.py - scheduler_main_program_run:34 - [Errno 2] No such file or directory: 'resources/account/user_info.csv'
+Traceback (most recent call last):
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 30, in scheduler_main_program_run
+    strategy_execution_steps()
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 14, in strategy_execution_steps
+    write_user_positions()
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\order_management\order_management__ce_pe.py", line 10, in write_user_positions
+    user_info_df = pd.DataFrame(read_user_info())
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\persistence_operations\account_management.py", line 16, in read_user_info
+    user_info_excel = pd.read_csv(USER_INPUTS_FILE)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'resources/account/user_info.csv'
+2023-03-31 20:27:11,500 - INFO - account_management.py -       read_user_info:15 - stated read user info data from user_info file
+2023-03-31 20:27:11,501 - ERROR - main_program_manual_exit.py - scheduler_main_program_run:34 - [Errno 2] No such file or directory: 'resources/account/user_info.csv'
+Traceback (most recent call last):
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 30, in scheduler_main_program_run
+    strategy_execution_steps()
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 14, in strategy_execution_steps
+    write_user_positions()
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\order_management\order_management__ce_pe.py", line 10, in write_user_positions
+    user_info_df = pd.DataFrame(read_user_info())
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\persistence_operations\account_management.py", line 16, in read_user_info
+    user_info_excel = pd.read_csv(USER_INPUTS_FILE)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'resources/account/user_info.csv'
+2023-03-31 20:27:26,825 - ERROR - main_program_manual_exit.py - scheduler_main_program_run:34 - DataFrame constructor not properly called!
+Traceback (most recent call last):
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 30, in scheduler_main_program_run
+    strategy_execution_steps()
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 15, in strategy_execution_steps
+    user_records = pd.DataFrame("orders_exit.csv")
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\core\frame.py", line 756, in __init__
+    raise ValueError("DataFrame constructor not properly called!")
+ValueError: DataFrame constructor not properly called!
+2023-03-31 20:29:56,036 - INFO - account_management.py -       read_user_info:15 - stated read user info data from user_info file
+2023-03-31 20:29:58,882 - ERROR - main_program_manual_exit.py - scheduler_main_program_run:35 - [Errno 2] No such file or directory: 'resources/account/user_info.csv'
+Traceback (most recent call last):
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 31, in scheduler_main_program_run
+    strategy_execution_steps()
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 16, in strategy_execution_steps
+    user_records = pd.DataFrame(read_user_info())
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\persistence_operations\account_management.py", line 16, in read_user_info
+    user_info_excel = pd.read_csv(USER_INPUTS_FILE)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'resources/account/user_info.csv'
+2023-03-31 20:30:53,814 - INFO - account_management.py -       read_user_info:15 - stated read user info data from user_info file
+2023-03-31 20:30:56,506 - ERROR - main_program_manual_exit.py - scheduler_main_program_run:35 - [Errno 2] No such file or directory: 'resources/account/user_info.csv'
+Traceback (most recent call last):
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 31, in scheduler_main_program_run
+    strategy_execution_steps()
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 16, in strategy_execution_steps
+    user_records = pd.DataFrame(read_user_info())
+  File "C:\mw_market_watch\mw_minisoft_stg_05\mw_minisoft_fyers\mw_minisoft\mw_minisoft\persistence_operations\account_management.py", line 16, in read_user_info
+    user_info_excel = pd.read_csv(USER_INPUTS_FILE)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'resources/account/user_info.csv'
+2023-04-01 15:27:01,382 - ERROR - main_program_manual_exit.py - scheduler_main_program_run:70 - [Errno 2] No such file or directory: '../mw_minisoft/resources/telegram/day_instrument_orders.csv'
+Traceback (most recent call last):
+  File "C:\mw_market_watch\mw_minisoft_stg_06\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 66, in scheduler_main_program_run
+    strategy_execution_steps1()
+  File "C:\mw_market_watch\mw_minisoft_stg_06\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 15, in strategy_execution_steps1
+    ticks_indicator = pd.read_csv("../mw_minisoft/resources/telegram/day_instrument_orders.csv")
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../mw_minisoft/resources/telegram/day_instrument_orders.csv'
+2023-04-26 12:29:06,376 - ERROR - main_program_manual_exit.py - scheduler_main_program_run:55 - 'function' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\mw_market_watch\TradingView\mw_minisoft_stg_06\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 51, in scheduler_main_program_run
+    strategy_execution_steps()
+  File "C:\mw_market_watch\TradingView\mw_minisoft_stg_06\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 17, in strategy_execution_steps
+    ticks_indicator_ = ticks_indi[ticks_indi['start_name'] == orders_tobe_exit.inst_strategy].iloc[-1]
+TypeError: 'function' object is not subscriptable
+2023-04-26 12:32:10,750 - ERROR - main_program_manual_exit.py - scheduler_main_program_run:55 - 'function' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\mw_market_watch\TradingView\mw_minisoft_stg_06\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 51, in scheduler_main_program_run
+    strategy_execution_steps()
+  File "C:\mw_market_watch\TradingView\mw_minisoft_stg_06\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 17, in strategy_execution_steps
+    ticks_indicator_ = ticks_indi[ticks_indi['start_name'] == orders_tobe_exit.inst_strategy].iloc[-1]
+TypeError: 'function' object is not subscriptable
+2023-04-26 12:32:25,669 - ERROR - main_program_manual_exit.py - scheduler_main_program_run:55 - 'function' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\mw_market_watch\TradingView\mw_minisoft_stg_06\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 51, in scheduler_main_program_run
+    strategy_execution_steps()
+  File "C:\mw_market_watch\TradingView\mw_minisoft_stg_06\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 17, in strategy_execution_steps
+    ticks_indicator_ = ticks_indi[ticks_indi['start_name'] == orders_tobe_exit.inst_strategy].iloc[-1]
+TypeError: 'function' object is not subscriptable
+2023-04-26 12:33:52,400 - ERROR - main_program_manual_exit.py - scheduler_main_program_run:55 - 'function' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\mw_market_watch\TradingView\mw_minisoft_stg_06\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 51, in scheduler_main_program_run
+    strategy_execution_steps()
+  File "C:\mw_market_watch\TradingView\mw_minisoft_stg_06\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 17, in strategy_execution_steps
+    ticks_indicator_ = ticks_indi[ticks_indi['start_name'] == orders_tobe_exit.inst_strategy].iloc[-1]
+TypeError: 'function' object is not subscriptable
+2023-04-26 12:35:09,446 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:11,903 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XA49035) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 160.2 
+2023-04-26 12:35:15,350 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:22,109 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:24,192 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XM29895) ,  Order Type : buy order , ticks_ind_running_qt: 2 , price: 164.0 
+2023-04-26 12:35:33,398 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:33,398 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:33,503 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XR12736) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 163.55 
+2023-04-26 12:35:33,504 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:33,505 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:33,600 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XA53911) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 163.55 
+2023-04-26 12:35:33,602 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:33,602 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:33,696 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XB14985) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 163.55 
+2023-04-26 12:35:33,697 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:33,698 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:33,784 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XM30869) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 163.55 
+2023-04-26 12:35:33,789 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:33,790 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:33,883 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XV21649) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 163.55 
+2023-04-26 12:35:33,885 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:33,885 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:33,974 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XS72747) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 163.55 
+2023-04-26 12:35:33,978 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:33,980 - INFO - main_program_manual_exit.py - scheduler_main_program_run:52 - %s main program execution ended
+2023-04-26 12:35:54,352 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:54,453 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XA49035) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 167.6 
+2023-04-26 12:35:54,456 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:54,457 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:54,571 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XM29895) ,  Order Type : buy order , ticks_ind_running_qt: 2 , price: 167.6 
+2023-04-26 12:35:54,572 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:54,572 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:54,670 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XR12736) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 167.6 
+2023-04-26 12:35:54,671 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:54,671 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:54,758 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XA53911) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 167.6 
+2023-04-26 12:35:54,759 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:54,760 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:54,850 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XB14985) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 167.6 
+2023-04-26 12:35:54,851 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:54,851 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:54,957 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XM30869) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 168.4 
+2023-04-26 12:35:54,958 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:54,958 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:55,043 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XV21649) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 168.4 
+2023-04-26 12:35:55,044 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:55,044 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:35:55,120 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42700CE ,User( XS72747) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 168.4 
+2023-04-26 12:35:55,121 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:35:55,121 - INFO - main_program_manual_exit.py - scheduler_main_program_run:52 - %s main program execution ended
+2023-04-26 12:41:12,124 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:41:12,239 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XA49035) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 241.45 
+2023-04-26 12:41:51,210 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:41:51,211 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:41:51,301 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XM29895) ,  Order Type : buy order , ticks_ind_running_qt: 2 , price: 239.85 
+2023-04-26 12:41:51,817 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:41:51,818 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:41:51,919 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XR12736) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 239.85 
+2023-04-26 12:41:52,304 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:41:52,306 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:41:52,402 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XA53911) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 239.85 
+2023-04-26 12:41:52,517 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:41:52,517 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:41:52,591 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XB14985) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 239.85 
+2023-04-26 12:41:52,701 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:41:52,701 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:41:52,783 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XM30869) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 239.85 
+2023-04-26 12:41:58,977 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:41:58,979 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:41:59,081 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XV21649) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 242.2 
+2023-04-26 12:41:59,083 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:41:59,084 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:41:59,174 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XS72747) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 242.2 
+2023-04-26 12:41:59,179 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'code': '500', 'data': TypeError('Object of type int64 is not JSON serializable')}
+2023-04-26 12:41:59,182 - INFO - main_program_manual_exit.py - scheduler_main_program_run:52 - %s main program execution ended
+2023-04-26 12:42:06,390 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:42:06,482 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XA49035) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 245.1 
+2023-04-26 12:43:20,640 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:43:20,714 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XA49035) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 237.35 
+2023-04-26 12:43:20,906 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,33,312.50 Available:INR 24,999.97 for C-XA49035 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:43:20,906 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:43:20,987 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XM29895) ,  Order Type : buy order , ticks_ind_running_qt: 2 , price: 237.35 
+2023-04-26 12:43:21,341 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,04,929.97 Available:INR 50,000.00 for C-XM29895 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:43:21,342 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:43:21,441 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XR12736) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 237.35 
+2023-04-26 12:43:21,654 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,54,929.97 Available:INR 0.00 for C-XR12736 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:43:21,654 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:43:21,758 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XA53911) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 237.35 
+2023-04-26 12:43:22,107 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,36,883.14 Available:INR 21,391.43 for C-XA53911 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:43:22,107 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:43:22,195 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XB14985) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 237.35 
+2023-04-26 12:43:22,430 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,54,930.82 Available:INR 0.00 for C-XB14985 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:43:22,430 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:43:22,498 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XM30869) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 237.35 
+2023-04-26 12:43:22,783 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,04,930.85 Available:INR 49,999.97 for C-XM30869 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:43:22,784 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:43:22,858 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XV21649) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 236.1 
+2023-04-26 12:43:23,165 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,13,255.85 Available:INR 41,674.97 for C-XV21649 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:43:23,166 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:43:23,256 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XS72747) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 236.1 
+2023-04-26 12:43:23,459 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,33,081.90 Available:INR 25,210.17 for C-XS72747 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:43:23,459 - INFO - main_program_manual_exit.py - scheduler_main_program_run:52 - %s main program execution ended
+2023-04-26 12:43:44,268 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:43:44,380 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XA49035) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 235.15 
+2023-04-26 12:45:06,149 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,33,868.22 Available:INR 24,999.97 for C-XA49035 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:45:06,149 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:45:06,231 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XM29895) ,  Order Type : buy order , ticks_ind_running_qt: 2 , price: 231.6 
+2023-04-26 12:45:07,246 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,05,485.08 Available:INR 50,000.00 for C-XM29895 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:45:07,246 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:45:07,332 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XR12736) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 230.55 
+2023-04-26 12:45:08,068 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,55,483.98 Available:INR 0.00 for C-XR12736 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:45:08,069 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:45:08,155 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XA53911) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 230.55 
+2023-04-26 12:45:15,476 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,37,436.69 Available:INR 21,391.43 for C-XA53911 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:45:15,477 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:45:15,566 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XB14985) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 231.9 
+2023-04-26 12:45:18,387 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,55,484.53 Available:INR 0.00 for C-XB14985 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:45:18,388 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:45:18,490 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XM30869) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 232.4 
+2023-04-26 12:45:25,633 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,05,485.91 Available:INR 49,999.97 for C-XM30869 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:45:25,634 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:45:25,713 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XV21649) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 231.0 
+2023-04-26 12:52:31,370 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:52:31,461 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XA49035) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 208.1 
+2023-04-26 12:52:31,755 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,30,459.54 Available:INR 24,999.97 for C-XA49035 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:52:31,755 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:52:31,847 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XM29895) ,  Order Type : buy order , ticks_ind_running_qt: 2 , price: 206.55 
+2023-04-26 12:52:32,058 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,05,458.49 Available:INR 50,000.00 for C-XM29895 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:52:32,058 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:52:32,163 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XR12736) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 206.55 
+2023-04-26 12:52:32,432 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,55,458.49 Available:INR 0.00 for C-XR12736 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:52:32,432 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:52:32,503 - ERROR - main_program_manual_exit.py - strategy_execution_steps:29 - 'd'
+2023-04-26 12:52:32,504 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XA53911) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 0 
+2023-04-26 12:52:32,587 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -22, 'message': 'Could not authenticate the user', 'id': ''}
+2023-04-26 12:52:32,588 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:52:32,675 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XB14985) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 206.55 
+2023-04-26 12:52:32,862 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,55,458.49 Available:INR 0.00 for C-XB14985 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:52:32,863 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:52:32,945 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XM30869) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 206.55 
+2023-04-26 12:52:33,190 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,05,458.52 Available:INR 49,999.97 for C-XM30869 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:52:33,191 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:52:33,288 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XV21649) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 206.55 
+2023-04-26 12:52:33,508 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,13,783.52 Available:INR 41,674.97 for C-XV21649 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:52:33,508 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:52:33,587 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XS72747) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 206.55 
+2023-04-26 12:52:33,803 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,33,609.57 Available:INR 25,210.17 for C-XS72747 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:52:33,803 - INFO - main_program_manual_exit.py - scheduler_main_program_run:52 - %s main program execution ended
+2023-04-26 12:53:06,300 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:53:06,387 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XA49035) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 204.95 
+2023-04-26 12:53:06,597 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,30,463.17 Available:INR 24,999.97 for C-XA49035 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:53:06,597 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:53:06,669 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XM29895) ,  Order Type : buy order , ticks_ind_running_qt: 2 , price: 204.95 
+2023-04-26 12:53:06,903 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,05,463.14 Available:INR 50,000.00 for C-XM29895 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:53:06,904 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:53:06,974 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XR12736) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 204.95 
+2023-04-26 12:53:07,164 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,55,463.14 Available:INR 0.00 for C-XR12736 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:53:07,165 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:53:07,219 - ERROR - main_program_manual_exit.py - strategy_execution_steps:29 - 'd'
+2023-04-26 12:53:07,219 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XA53911) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 0 
+2023-04-26 12:53:07,299 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -22, 'message': 'Could not authenticate the user', 'id': ''}
+2023-04-26 12:53:07,300 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:53:07,417 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XB14985) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 204.95 
+2023-04-26 12:53:07,624 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,55,463.14 Available:INR 0.00 for C-XB14985 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:53:07,624 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:53:07,703 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XM30869) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 204.95 
+2023-04-26 12:53:07,936 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,05,463.17 Available:INR 49,999.97 for C-XM30869 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:53:07,936 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:53:08,006 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XV21649) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 205.6 
+2023-04-26 12:53:08,197 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,13,787.87 Available:INR 41,674.97 for C-XV21649 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:53:08,197 - INFO - retrive_request_token.py - generate_user_session:121 - A new user session has been created; the session will be returned.
+2023-04-26 12:53:08,273 - INFO - main_program_manual_exit.py - strategy_execution_steps:30 - Exiting position :- instrument_token: NSE:BANKNIFTY23APR42600CE ,User( XS72747) ,  Order Type : buy order , ticks_ind_running_qt: 1 , price: 205.6 
+2023-04-26 12:53:08,506 - INFO - main_program_manual_exit.py - strategy_execution_steps:40 - Instrument Order Detail, order info {'s': 'error', 'code': -99, 'message': 'RED:Margin Shortfall:INR 1,33,613.92 Available:INR 25,210.17 for C-XS72747 [FYERS_RISK_CUG]', 'id': ''}
+2023-04-26 12:53:08,507 - INFO - main_program_manual_exit.py - scheduler_main_program_run:52 - %s main program execution ended
+2023-06-12 12:56:21,215 - ERROR - main_program_manual_exit.py - scheduler_main_program_run:66 - [Errno 2] No such file or directory: 'resources/account/user_info.csv'
+Traceback (most recent call last):
+  File "C:\mw_market_watch\TradingView\mw_minisoft_stg_06\production\mw_minisoft_fyers\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 61, in scheduler_main_program_run
+    user_positions()
+  File "C:\mw_market_watch\TradingView\mw_minisoft_stg_06\production\mw_minisoft_fyers\mw_minisoft_fyers\mw_minisoft\mw_minisoft\manual_exit\main_program_manual_exit.py", line 48, in user_positions
+    user_records = pd.read_csv(USER_INPUTS_FILE)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\sriram\AppData\Roaming\Python\Python310\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'resources/account/user_info.csv'
